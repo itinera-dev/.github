@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in this implementation does not behave as the specification says, or does not work at all.
+title: "Bug: "
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The smallest workflow or code that shows the problem, and the steps to run it.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version of this implementation, and the specification version or tier it claims, if you know.
+    validations:
+      required: false
+  - type: textarea
+    id: events
+    attributes:
+      label: Events
+      description: Optional. The events reported for the journey, if you captured them.
+      render: text
+    validations:
+      required: false
