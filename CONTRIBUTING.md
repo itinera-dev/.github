@@ -29,6 +29,16 @@ By opening an issue or a pull request in any itinera-dev repository, you accept 
 
 The full process, from proposal to implementation, is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
 
+## The three kinds of document
+
+Every feature is described by three documents:
+
+1. **The proposal, a PRD:** why the feature exists and what is wanted. Discussed in an issue in [itinera-dev/spec](https://github.com/itinera-dev/spec) and kept there once accepted. Never specific to a language.
+2. **The behaviour specification:** exactly what every implementation must do, in terms the conformance suite can observe. Kept in [itinera-dev/spec](https://github.com/itinera-dev/spec). Never specific to a language.
+3. **The tech spec:** how one language implements a proposal. Agreed in that language's implementation issue and kept next to the code, under `docs/specs/` in that language's repository.
+
+If the conformance suite could observe something, it belongs in the behaviour specification. If it is about how code is written in one language, it belongs in that language's tech spec. When we say "the spec" on its own, we mean the behaviour specification.
+
 ## Please do not open a pull request before the spec exists
 
 If you have an idea for a feature, and even an idea of how to implement it, please start with a Proposal issue and wait. Do not open an implementation pull request until the proposal has been accepted and its spec has been merged.
