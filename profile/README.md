@@ -41,6 +41,6 @@ AI is an integral part of how Itinera is made: agents write code and specificati
 
 ## Contributing
 
-To propose a feature, open a Proposal issue in [spec](https://github.com/itinera-dev/spec/issues/new/choose). Proposals are triaged, evaluated in the issue thread, and turned into specification text once agreed. Please share implementation ideas in the issue, and open a pull request only after the spec is merged; then implementation is open to everyone. The whole process is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
+To propose a feature, open a Proposal issue in [spec](https://github.com/itinera-dev/spec/issues/new/choose). Proposals are triaged, evaluated in the issue thread, and turned into specification text once agreed. Please share implementation ideas in the issue, and open a pull request only after the spec is merged; then implementation is open to everyone. Opening the issue is all that is asked of you; the rest is done when the proposal is planned. [It is not bureaucracy](https://github.com/itinera-dev/.github/blob/main/CONTRIBUTING.md#this-is-not-bureaucracy). The whole process is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
 
 Itinera is dual-licensed under MIT and Apache-2.0.
