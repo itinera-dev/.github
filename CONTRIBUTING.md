@@ -29,9 +29,19 @@ By opening an issue or a pull request in any itinera-dev repository, you accept 
 
 The full process, from proposal to implementation, is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
 
+## Please do not open a pull request before the spec exists
+
+If you have an idea for a feature, and even an idea of how to implement it, please start with a Proposal issue and wait. Do not open an implementation pull request until the proposal has been accepted and its spec has been merged.
+
+- **Put your implementation ideas in the issue.** Describe how you would do it, sketch the code if that helps. Those ideas are welcome and will be weighed during the evaluation.
+- **The spec comes first because the architecture is global.** Every feature has to fit the specification, every tier, every language and every executor. The maintainers, working with agents across all of it, are best placed to see how a feature fits the whole, and the agreed spec may end up different from what any single implementation idea assumed.
+- **After the spec is merged, implementation is open to everyone,** including you. Each accepted proposal gets an implementation issue in every language repository. Say in that issue that you would like to take it, and follow the spec and the existing architecture.
+
+A pull request opened before its proposal is accepted may be closed, with a pointer to the issue, however good the code is. Nothing is lost: the ideas move to the issue, and the code can come back once the spec exists.
+
 ## Pull requests
 
-- Behaviour is specified before it is implemented. A pull request that changes behaviour in an implementation must point to the accepted proposal it implements.
+- Behaviour is specified before it is implemented. A pull request that changes behaviour in an implementation must point to the accepted proposal it implements and to its implementation issue.
 - Keep pull requests focused on one thing.
 - Say what changed and why in the description, in plain prose.
 
