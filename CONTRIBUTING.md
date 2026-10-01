@@ -78,8 +78,17 @@ A pull request opened before its proposal is accepted may be closed, with a poin
 ## Pull requests
 
 - Behaviour is specified before it is implemented. A pull request that changes behaviour in an implementation must point to the accepted proposal it implements and to its implementation issue.
+- Every pull request is linked to an open issue in the same repository, with "Closes #N" in its description. A check refuses pull requests that are not. To mention an issue in another repository, write "Refs owner/repo#N", never "Closes".
 - Keep pull requests focused on one thing.
 - Say what changed and why in the description, in plain prose.
+
+## Automation
+
+Checks and automation follow three rules in every repository:
+
+1. **Scripts are Python, standard library only**, run with the Python already on GitHub's runners. Nothing has to be installed.
+2. **Workflow YAML contains no code.** A workflow declares when it runs and with which permissions, and calls an action. A step may at most run a single command, such as running the tests.
+3. **Shared automation lives in [itinera-dev/actions](https://github.com/itinera-dev/actions)**, one folder per action, with its logic covered by tests that run on every pull request. Repositories use a released version, for example `itinera-dev/actions/pr-has-issue@v1`.
 
 ## Writing style
 
