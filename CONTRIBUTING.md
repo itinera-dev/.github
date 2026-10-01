@@ -78,6 +78,7 @@ A pull request opened before its proposal is accepted may be closed, with a poin
 ## Pull requests
 
 - Behaviour is specified before it is implemented. A pull request that changes behaviour in an implementation must point to the accepted proposal it implements and to its implementation issue.
+- Every pull request is linked to an open issue in the same repository, with "Closes #N" in its description. A check refuses pull requests that are not. To mention an issue in another repository, write "Refs owner/repo#N", never "Closes".
 - Keep pull requests focused on one thing.
 - Say what changed and why in the description, in plain prose.
 
