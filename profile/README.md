@@ -35,6 +35,10 @@ Itinera grows in cumulative tiers. A language claims a tier when it passes every
 
 The details are in [ROADMAP.md](https://github.com/itinera-dev/spec/blob/main/ROADMAP.md).
 
+## How Itinera is built
+
+AI is an integral part of how Itinera is made: agents write code and specification text, review pull requests and help manage issues. A human maintainer reviews everything before it is merged, and work that is right is used whoever, or whatever, wrote it. The terms are those of [A manifesto for software engineering with AI](https://marlon-sousa.com/blog/manifesto/), and contributors accept them as described in the [contributing guide](https://github.com/itinera-dev/.github/blob/main/CONTRIBUTING.md#how-itinera-is-built).
+
 ## Contributing
 
 To propose a feature, open a Proposal issue in [spec](https://github.com/itinera-dev/spec/issues/new/choose). Proposals are triaged, evaluated in the issue thread, and turned into specification text once agreed. The whole process is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
