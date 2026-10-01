@@ -37,7 +37,9 @@ The full process, from proposal to implementation, is in [PROCESS.md](https://gi
 
 ## Writing style
 
-Everything we write must be readable with a screen reader: documentation, issues, pull requests and comments. Use headings, lists, prose and simple tables. Do not use ASCII-art diagrams, arrows drawn with characters, or box-drawing trees; describe a flow as a numbered list instead.
+Everything we write must be readable with a screen reader: documentation, issues, pull requests and comments. Use headings, lists, prose and simple tables.
+
+Diagrams are Mermaid diagrams, in fenced code blocks marked `mermaid`, which GitHub renders. Every diagram declares `accTitle` and `accDescr`, which are exposed to screen readers, and is accompanied by text that says everything the diagram shows. Do not use ASCII-art diagrams, arrows drawn with characters, or box-drawing trees.
 
 ## Licence
 
