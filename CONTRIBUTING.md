@@ -21,6 +21,32 @@ By opening an issue or a pull request in any itinera-dev repository, you accept 
 - Your contribution will be judged by whether it is right, not by who or what produced it.
 - Agents working in these repositories may read, evaluate and comment on your issues and pull requests, always on a maintainer's request and always marked as an agent's comment.
 
+## This is not bureaucracy
+
+Proposals, a behaviour specification, tech specs, conformance cases: it can look like a lot of paperwork before anybody writes a line of code. Here is what it asks of you, and why it exists.
+
+### What you actually have to do
+
+**Open one issue.** If you want something in Itinera, open a Proposal issue in [itinera-dev/spec](https://github.com/itinera-dev/spec/issues/new/choose) and say what you need and why. It can be short. You do not have to know the tier, write normative text, design the API, or touch any other repository.
+
+Everything after that is the maintainers' job, done with agents, when the proposal is planned: the evaluation questions, the summary, the proposal file, the behaviour specification, the conformance cases, the tech spec in each language and the code. You are welcome to join any of it, answer questions, or take the implementation once the spec exists. None of it is required of you.
+
+### Why the documents exist
+
+- **Writing it down is cheap now; not writing it down is not.** Agents write most of the code here, and an agent starts every session knowing nothing. Whatever nobody wrote down does not exist for it. The documents are how a decision taken once stays taken, instead of being rediscovered, or quietly contradicted, in every session.
+- **One feature, several languages.** The behaviour specification and the conformance cases are what make the Rust, TypeScript and JVM implementations behave the same. Without them, each language would decide on its own.
+- **The expensive mistake is building the wrong thing.** When code is fast to produce, the costly error is a lot of correct code for the wrong feature. Agreeing first, in the issue, is the cheapest point at which to find that out.
+- **The documents are mostly written by agents.** The maintainers decide and review; the machine does most of the writing. The process moves at the speed the code does.
+
+### Further reading
+
+These are by Itinera's maintainer and describe the way of working this process comes from:
+
+- [A manifesto for software engineering with AI](https://marlon-sousa.com/blog/manifesto/), especially commitments 2 (the rest of the process has to move at the speed of code) and 3 (the work happens before the code).
+- [The night that produced no code](https://marlon-sousa.com/blog/the-night-that-produced-no-code/): five hundred and forty lines of documentation and no code on the first night of a project, and what those documents were worth weeks later.
+- [The loop, built for real](https://marlon-sousa.com/blog/the-loop-built-for-real/): why a spec turns out to be two documents, only one of them technical, and why it lives in the repository next to the code.
+- [Asking cost an engineer](https://marlon-sousa.com/blog/asking-cost-an-engineer/): why a two-line ticket was never laziness, and why a short proposal issue is a fine place to start.
+
 ## Where to start
 
 - **A change to how Itinera behaves** is a proposal. Open a Proposal issue in [itinera-dev/spec](https://github.com/itinera-dev/spec/issues/new/choose). Most features are proposals, because every language implementation must follow them.
