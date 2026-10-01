@@ -1,5 +1,12 @@
-# .github
-Itinera organisation profile
+# itinera-dev/.github
+
+The organisation's shared files:
+
+- [profile/README.md](profile/README.md): the page shown at github.com/itinera-dev.
+- [CONTRIBUTING.md](CONTRIBUTING.md): the contributing guide, used by every repository that has none of its own.
+- [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/): the default issue forms, used by every repository that has none of its own.
+
+Itinera itself is described in [itinera-dev/spec](https://github.com/itinera-dev/spec).
 
 ## License
 
