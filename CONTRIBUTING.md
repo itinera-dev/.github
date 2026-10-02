@@ -77,10 +77,37 @@ A pull request opened before its proposal is accepted may be closed, with a poin
 
 ## Pull requests
 
-- Behaviour is specified before it is implemented. A pull request that changes behaviour in an implementation must point to the accepted proposal it implements and to its implementation issue.
-- Every pull request is linked to an open issue in the same repository, with "Closes #N" in its description. A check refuses pull requests that are not. To mention an issue in another repository, write "Refs owner/repo#N", never "Closes".
+We work trunk-based: small pull requests straight to `main`, no long-lived branches.
+
+### Say which issue your pull request belongs to
+
+Every pull request names an open issue in the same repository, in its description:
+
+- **`Closes #N`** when your pull request finishes that issue;
+- **`Refs #N`** when it contributes to that issue without finishing it.
+
+You do not need to open a new issue for each piece of work: refer to the issue the work belongs to. A check refuses pull requests that name no open issue. To mention an issue in another repository, write "Refs owner/repo#N", never "Closes".
+
+### Large changes are stacked
+
+If a change is too large for one pull request, split it into a stack: a chain of pull requests, each building on the one before, with GitHub's stacked pull requests (on github.com, or with `gh stack` from the command line, installed with `gh extension install github/gh-stack`). Each layer says `Refs #N`, the last one says `Closes #N`, and the layers are reviewed and merged in order.
+
+### Finishing a proposal in an implementation
+
+In a language repository, work on an accepted proposal belongs to its implementation issue, for example "Implement spec#8 (Steps)":
+
+1. pull requests that contribute to it say `Refs #N`; the proposal's conformance cases do not run against unfinished work;
+2. the pull request that completes it says `Closes #N` and adds the proposal's number to `proposals` in `conformance.json`; from then on its cases run on every pull request, and must pass for this one to merge.
+
+A check refuses a pull request that does only one of the two.
+
+### Also
+
+- Behaviour is specified before it is implemented: see "Please do not open a pull request before the spec exists" above.
 - Keep pull requests focused on one thing.
 - Say what changed and why in the description, in plain prose.
+
+The full process is in [PROCESS.md](https://github.com/itinera-dev/spec/blob/main/PROCESS.md).
 
 ## Automation
 
